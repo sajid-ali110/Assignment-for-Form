@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            /* position: relative;
+            margin-left: 100px; */
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        input,
+        label option,
+        textarea,
+        select {
+            margin-bottom: 10px;
+            border: 1px rgb(85, 85, 85) solid;
+        }
+        div{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }   
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h3 style="color: rgb(105, 12, 12); text-align: center; margin-left: 200px; text-decoration: underline;">
+            Student Registration Form
+        </h3>
+        <div>
+            <form style="background-color: rgb(224, 224, 224);" action="">
+                <label for="first">First Name: </label>
+                <input style=" margin-left: 80px; padding: 7px 250px 7px 5px; border-radius: 5px;" id="first"
+                    name="first" type="text" placeholder="Enter your first name">
+                <br>
+                <label for="last">Last Name: </label>
+                <input style="margin-left: 82px; padding: 7px 250px 7px 5px; border-radius: 5px;" id="last" name="last"
+                    placeholder="Enter your last name" type="text">
+                <br>
+                <label for="email">Email: </label>
+                <input style="margin-left: 113px; padding: 7px 250px 7px 5px; border-radius: 5px; " id="email"
+                    name="email" placeholder="it should contain @,." type="email">
+                <br>
+                <label for="mobile">Mobile: </label>
+                <input style="margin-left: 105px; padding: 7px 250px 7px 5px; border-radius: 5px; " id="mobile"
+                    name="mobile" placeholder="only 10 digits are allowed" type="tel" pattern="[0-9]{10}" maxlength="10"
+                    required>
+                <br>
+                <label for="gender">Gender: </label>
+                <label>
+                    <input style="margin-left: 113px; padding: 7px 250px 7px 5px; border-radius: 5px; " type="radio"
+                        name="gender" value="male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+                <br>
+                <label for="dob">Date Of Birth: </label>
+                <input style="margin-left: 65px; padding: 7px 307px 7px 5px; border-radius: 5px; " id="dob" name="dob"
+                    type="date" placeholder="mm//dd//yyyy">
+                <br>
+                <label for="Address">Address: </label>
+                <textarea style="margin-left: 100px; padding: 7px 250px 7px 5px; border-radius: 5px; margin-bottom: auto; " name="Address"
+                    id="Address" cols="21" rows="10"></textarea>
+                <br>
+                <label for="city">City: </label>
+                <input style="margin-left: 124px; padding: 7px 250px 7px 5px; border-radius: 5px; " id="city"
+                    name="city" type="text">
+                <br>
+                <label for="area">Area PIN: </label>
+                <input style="margin-left: 90px; padding: 7px 250px 7px 5px; border-radius: 5px; " id="area" name="area"
+                    type="text">
+                <br>
+                <label for="State">State: </label>
+                <input style="margin-left: 118px; padding: 7px 250px 7px 5px; border-radius: 5px; " id="State"
+                    name="State" type="text">
+                <br>
+                <label for="qualification">Qualification: </label>
+                <select style="margin-left: 65px;" name="qualification" id="qualification">
+                    <option value="1">Select Qualification: </option>
+                    <option value="2">Matric</option>
+                    <option value="3">Intermediate</option>
+                    <option value="4">Becholar</option>
+                    <option value="5">Masters</option>
+                </select>
+                <br>
+                Specialization:
+                <label for="Option1">
+                    <input style="margin-left: 70px;" type="checkbox" name="Option1" id="Option1">
+                    Computer Science
+                </label>
+                <br>
+                <label for="Option2">
+                    <input style="margin-left: 169px;" type="checkbox" name="Option2" id="Option2">
+                    Information Technology
+                </label>
+                <br>
+                <label for="Option3">
+                    <input style="margin-left: 169px;" type="checkbox" name="Option3" id="Option3">
+                    Computer Architecture
+                </label>
+                <br>
+                <label for="Option4">
+                    <input style="margin-left: 169px;" type="checkbox" name="Option4" id="Option4">
+                    Tele Communication
+                </label>
+                <br>
+                <label for="password">Password: </label>
+                <input style="margin-left: 93px; padding: 7px 250px 7px 5px; border-radius: 5px; " type="password"
+                    name="password" id="password">
+                <br>
+                <button
+                    style="background-color: rgb(30, 201, 67); color: white; padding: 10px 20px; border-radius: 5px; border-color:rgb(30, 201, 67) ; margin-left: 20px;">Registered</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
